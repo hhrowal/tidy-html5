@@ -14,5 +14,8 @@ LOCAL_C_INCLUDES := \
   $(LOCAL_PATH)/../include $(LOCAL_PATH)/../../include
 LOCAL_MODULE := tidy
 LOCAL_SRC_FILES := $(addprefix $(src_dir)/, $(src_files))
+LOCAL_CFLAGS := -fPIC
+LOCAL_CXXFLAGS := -fPIC
+LOCAL_CPPFLAGS := -fPIC
 
 include $(BUILD_STATIC_LIBRARY)
