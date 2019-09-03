@@ -33,7 +33,7 @@ for arch in $archs ; do
   build
 done
 ANDROID_PLATFORM=android-21
-archs="arm64-v8a"
+archs="arm64-v8a x86_64"
 for arch in $archs ; do
   TARGET_ARCH_ABI=$arch
   build
